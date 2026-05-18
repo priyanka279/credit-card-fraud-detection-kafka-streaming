@@ -153,3 +153,48 @@ Predictions will appear in Terminal 1 within a few seconds.
 
 🎥 [Watch Kafka Streaming Demo](https://drive.google.com/file/d/1GL_qzzGLY2pfJ4F-y4RCg6E4OrMKzB3B/view?usp=sharing)
 
+---
+
+## Sample Output
+
+### Producer Output (`producer.py`)
+
+```bash
+Sent row 15 to 'raw-data'
+Sent row 16 to 'raw-data'
+Sent row 17 to 'raw-data'
+Sent row 18 to 'raw-data'
+Sent row 19 to 'raw-data'
+Sent row 20 to 'raw-data'
+```
+
+### Faust Streams Processor Output (`streams_processor.py`)
+
+```bash
+Processed: Legitimate | Amount: $6.14
+Processed: Legitimate | Amount: $27.50
+Processed: Legitimate | Amount: $58.80
+Processed: Legitimate | Amount: $15.99
+Processed: Legitimate | Amount: $12.99
+```
+
+### Consumer Output (`output_consumer.py`)
+
+```bash
+#   Amount    Prediction    Probability    Actual
+14  $27.50    Legitimate    0.0            Actual=Legit
+15  $58.80    Legitimate    0.0            Actual=Legit
+16  $15.99    Legitimate    0.0            Actual=Legit
+17  $12.99    Legitimate    0.0            Actual=Legit
+18  $0.89     Legitimate    0.0            Actual=Legit
+```
+
+---
+
+## Real-Time Pipeline Behaviour
+
+- Producer streams credit card transactions into Kafka in real time
+- Faust agent asynchronously consumes messages from the `raw-data` topic
+- Random Forest ML model performs live fraud prediction
+- Predictions are published to the `predictions` Kafka topic
+- Output consumer displays predictions instantly in the terminal
