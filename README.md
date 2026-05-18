@@ -123,13 +123,13 @@ python train_model.py
 
 Open **3 terminals** in this exact order:
 
-### Terminal 1 — Output Consumer *(start first)*
+### Terminal 1 - Output Consumer *(start first)*
 
 ```bash
 python output_consumer.py
 ```
 
-### Terminal 2 — Faust Streams Processor *(start second)*
+### Terminal 2 - Faust Streams Processor *(start second)*
 
 ```bash
 venv_faust\Scripts\activate
@@ -138,7 +138,7 @@ python -m faust -A streams_processor worker -l info
 
 > Wait ~10 seconds for Faust to authenticate and connect before starting Terminal 3.
 
-### Terminal 3 — Producer *(start last)*
+### Terminal 3 - Producer *(start last)*
 
 ```bash
 venv_faust\Scripts\activate
@@ -151,4 +151,4 @@ Predictions will appear in Terminal 1 within a few seconds.
 
 ## Video Demo
 
-🎥 [Add your YouTube / Google Drive link here]
+🎥 [https://drive.google.com/file/d/1GL_qzzGLY2pfJ4F-y4RCg6E4OrMKzB3B/view?usp=sharing]
