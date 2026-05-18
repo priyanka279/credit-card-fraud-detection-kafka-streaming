@@ -151,5 +151,5 @@ Predictions will appear in Terminal 1 within a few seconds.
 
 ## Video Demo
 
-🎥 [https://drive.google.com/file/d/1GL_qzzGLY2pfJ4F-y4RCg6E4OrMKzB3B/view?usp=sharing]
+🎥 [Watch Kafka Streaming Demo](https://drive.google.com/file/d/1GL_qzzGLY2pfJ4F-y4RCg6E4OrMKzB3B/view?usp=sharing)
 
