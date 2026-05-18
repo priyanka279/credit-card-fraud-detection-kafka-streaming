@@ -1,0 +1,7 @@
+data/
+venv_faust/
+venv311/
+__pycache__/
+fraud-detector-data/
+*.pyc
+.faust/
